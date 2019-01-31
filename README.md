@@ -2,6 +2,9 @@
 While browing thorugh https://projecteuler.net I came across a problem on solving sudoku puzzles
 The problem set containted about 50 different problems so I thought I would solve them by writing a program for it
 
+I downloaded the probelem set from https://projecteuler.net/problem=96 as a .txt file and ran it throught my c++ program
+as a command line arguement. 
+
 While coming up with a solution, I came across the Backtracking technique. I figuered that was a better method for solving a sudoku
 puzzle than keeping track of each cell's possible candidates.
 
