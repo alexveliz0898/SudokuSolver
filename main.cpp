@@ -217,14 +217,16 @@ bool assignable(std::vector< std::vector<int> > Board, int x,const int i,const  
     //places the iterator at the top left of each box
     int c = j - (j % 3);
     int r = i - (i % 3);
-
-    for(int i = 3 * (r / 3); i < 3 * (r / 3) + 3; ++i) {
-        for(int j = 3 * (c / 3); j < 3 * (c / 3) + 3; ++j) {
+    
+    //scan through the chosen cell's box
+    for(int i = r; i < r + 3; ++i) {
+        for(int j = c; j < c + 3; ++j) {
             if((i != r || j != c) && x == Board[i][j])
                 return false;
         }
     }
-    return true;
+    
+    return true;                                        //well placed
 }
 
 
